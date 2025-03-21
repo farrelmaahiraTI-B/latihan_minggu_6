@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #F9F7F7;
+    --secondary: #DBE2EF;
+    --font: #3F72AF;
+}
+
+.wrapper {
+    background-color: var(--primary);
+    min-height: 100vh;
+}
+
+.header {
+    padding: 10px;
+    font-weight: lighter;
+    background-color: var(--secondary);
+}
+
+.header h2 {
+    color: var(--font);
+    font-family: 'Boldonse';
+}
+
+h1 {
+    color: var(--font);
+    font-family: 'Boldonse';
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.grid-content {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-content > div {
+    margin: 10px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
