@@ -36,8 +36,8 @@ h1 {
 .grid-content {
     display: grid;
     padding: 5px;
-    grid-template-columns: auto auto auto auto;
     column-gap: 10px;
+    grid-template-columns: auto auto auto auto;
     row-gap: 20px;
 }
 
@@ -60,6 +60,7 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .card img {
@@ -77,4 +78,12 @@ h1 {
     color: #555;
 }
 
+
+@media only screen and (max-width : 600px) {
+    .grid-content {
+        grid-template-columns: 1fr; 
+        justify-items: center; 
+    }
+
+}
 
